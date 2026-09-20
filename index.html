@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huwa — Photography Portfolio</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: photographer name + one-line tagline -->
+  <header class="site-header">
+    <h1>Huwa</h1>
+    <p class="tagline">A collection of landscape and travel photography</p>
+  </header>
+
+  <!-- MAIN: holds the photo gallery -->
+  <main>
+    <!-- .gallery is the grid container that lays out all the photos -->
+    <section class="gallery" aria-label="Photo gallery">
+
+      <!-- Featured photo: spans 2 columns (class "feature") -->
+      <figure class="photo feature">
+        <img src="https://picsum.photos/seed/huwa1/800/600"
+             alt="Featured photograph displayed larger than the rest of the gallery">
+        <figcaption>Featured Photo</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa2/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Two</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa3/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Three</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa4/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Four</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa5/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Five</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa6/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Six</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa7/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Seven</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa8/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Eight</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa9/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Nine</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://picsum.photos/seed/huwa10/800/600"
+             alt="A scenic photograph in the gallery collection">
+        <figcaption>Photo Ten</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- FOOTER: credit line -->
+  <footer>
+    <p>&copy; 2026 Huwa · Built with CSS Grid</p>
+  </footer>
+
+  <!-- Reflection (100-200 words) -->
+  <p class="reflection">
+    <strong>Reflection:</strong> The hardest Grid concept for me was the span
+    keyword. At first I was confused about which direction it would go — whether
+    the item would stretch across columns, down the rows, or somewhere diagonal —
+    and it took some trial and error in practice before I understood that
+    grid-column: span 2 stretches an item sideways across two columns. One thing I
+    had to look up while building was the fr unit, and I learned that it means a
+    "fraction" of the free space, so 1fr columns share the leftover room equally
+    and stay flexible instead of being fixed in pixels. Outside of this class, I
+    have seen this same photo-grid pattern before in my ITD 110 class, where
+    images were arranged in a neat responsive grid. Building this gallery myself
+    helped me finally understand how those layouts hold together and rearrange on
+    different screen sizes.
+  </p>
+
+</body>
+</html>
