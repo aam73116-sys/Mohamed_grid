@@ -1,0 +1,80 @@
+/* ===== Base page styles ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafbfc;
+  color: #1f2933;
+}
+
+/* Header and footer: centered with padding */
+.site-header,
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  color: #7a3b2e;   /* deep Nubian red-brown */
+}
+
+.tagline {
+  color: #5a6b72;
+}
+
+
+/* ===== THE GRID ===== */
+/* .gallery is the grid container.
+   display: grid lays the photos out in rows and columns.
+   repeat(auto-fit, minmax(240px, 1fr)) makes as many equal columns as fit
+   the screen, each at least 240px wide, so the gallery reflows on any screen
+   with NO media query. gap adds even space between the photos. */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+/* featured photo spans 2 columns */
+/* .feature is the hero photo. grid-column: span 2 makes it stretch across
+   two columns so it looks twice as wide as the others. */
+.gallery .feature {
+  grid-column: span 2;
+}
+
+/* .photo is one gallery card (a <figure>).
+   overflow: hidden keeps the rounded corners clean when the image fills it. */
+.photo {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(11, 61, 145, 0.06);
+}
+
+/* .photo img is each photo.
+   object-fit: cover crops the photo to fill its box instead of squishing it,
+   so photos of different shapes all look neat. */
+.photo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption under each photo */
+.photo figcaption {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #3e4c59;
+}
+
+/* Reflection paragraph */
+.reflection {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  line-height: 1.6;
+  color: #3e4c59;
+}
